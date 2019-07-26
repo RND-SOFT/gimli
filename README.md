@@ -2,6 +2,8 @@
 
 [![](https://secure.travis-ci.org/walle/gimli.png)](http://travis-ci.org/walle/gimli)
 
+**Patched version for support new wkhtmltopdf cover and toc options.**
+
 ## Description
 
 Gimli is a utility for converting markup to pdf files. Useful for reports and such things.
