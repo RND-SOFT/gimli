@@ -16,6 +16,9 @@ module Gimli
       args = command(filename)
       invoke = args.join(' ')
 
+      html_path = File.join(File.dirname(filename), "#{File.basename(filename, '.*')}.html")
+      File.write(html_path, html)
+
       IO.popen(invoke, "wb+") do |pdf|
         pdf.puts(html)
         pdf.close_write

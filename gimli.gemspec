@@ -24,13 +24,14 @@ Gem::Specification.new do |s|
   s.add_dependency 'coderay', '~> 1.1'
   s.add_dependency 'nokogiri', '~> 1.8.0'
 
-  s.add_dependency 'wkhtmltopdf-binary', '~> 0.12.3'
+  # s.add_dependency 'wkhtmltopdf-binary', '~> 0.12.3'
   s.add_dependency 'optiflag', '~> 0.7'
 
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'rr'
   s.add_development_dependency 'bundler'
+  s.add_development_dependency 'byebug'
 
   s.files = Dir.glob("{bin,ext,lib,spec,config}/**/*") + ['LICENSE', 'README.md', 'CHANGELOG.md']
   s.executables = ['gimli']
